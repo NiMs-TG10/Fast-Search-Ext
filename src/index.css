@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 @theme inline{
     --color-foreground: #232230;
@@ -10,4 +10,56 @@
 .custom-scrollbar {
   scrollbar-width: thin;
   scrollbar-color: #3b3b3b transparent;
+} */
+
+
+@import "tailwindcss";
+
+@theme inline{
+    /* Sophisticated color palette */
+    --color-foreground: #E8E6F0;
+    --color-foreground-muted: #B8B5C8;
+    --color-primary: #C9A56B;
+    --color-primary-light: #E5D4B8;
+    --color-accent: #8B7AB8;
+    --color-background: #0F0E1A;
+    --color-background-elevated: #1A1827;
+    --color-background-subtle: #252337;
+    
+    /* Premium typography */
+    --font-urbanist: "Urbanist", "sans-serif";
+    --font-geist: "Geist", "sans-serif";
+    
+    /* Elegant shadows */
+    --shadow-luxury: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.2);
+    
+    /* Refined transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Luxury scrollbar with gold accent */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #C9A56B rgba(201, 165, 107, 0.1);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(201, 165, 107, 0.05);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #C9A56B 0%, #A88A5C 100%);
+  border-radius: 4px;
+  transition: var(--transition-smooth);
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #E5D4B8 0%, #C9A56B 100%);
 }
