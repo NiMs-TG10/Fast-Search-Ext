@@ -1,0 +1,22 @@
+{
+  "name": "GoSearch",
+  "description": "Search with shortcuts",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["storage", "tabs"],
+  "omnibox": {
+    "keyword": "go"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "GoSearch",
+    "default_icon": {
+      "16": "image.png",
+      "32": "image.png"
+    }
+  }
+
+}

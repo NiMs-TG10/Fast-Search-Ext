@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+@theme inline{
+    --color-foreground: #232230;
+    --color-blue: #0eaaa6;
+    --color-background: #1a1927;
+    --font-urbanist:"Urbanist","sans-serif";
+    --font-geist: "Geist","sans-serif";
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #3b3b3b transparent;
+}
